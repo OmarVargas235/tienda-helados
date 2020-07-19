@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+	.lista-productos {
+		.card-text {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis; 
+		}
+	}
+}

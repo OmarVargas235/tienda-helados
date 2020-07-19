@@ -1,0 +1,65 @@
+/*Header*/
+.navbar-dark {
+	background-color: #2E3339 !important;
+	color: white;
+}
+
+.navbar {
+	
+	a:hover {
+		text-decoration: none;
+	}
+
+	.movido {
+		position: relative;
+		transition: right .3s ease-in;
+		right: 42%;
+	}
+
+	.no-movido {
+		position: relative;
+		transition: right .3s ease-in;
+		right: 0%;
+	}
+
+	svg {
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		.movido {
+			transition: right .5s ease-in;
+			right: 150%;
+		}
+
+		.no-movido {
+			transition: right .5s ease-in;
+		}
+	}	
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		.movido {
+			right: 35%;
+		}
+	}	
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+		.movido {
+			right: 25%;
+		}
+	}	
+}
+
+@media (min-width: 1300px) {
+	.navbar {
+		.movido {
+			right: 22%;
+		}
+	}	
+}

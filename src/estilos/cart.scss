@@ -1,0 +1,156 @@
+.cart {
+	background-color: #2E3339;
+	position: fixed;
+	top: 0;
+	right: -42%;
+	z-index: 1;
+	width: 42%;
+	transition: right .3s ease-in;
+	overflow-y: scroll;
+	color: white;
+
+	.lista-productos-carrito {
+		height: 51px;
+		border-bottom: 2px solid #34393F;
+	}
+	
+	.divisor, .divisor-pequeno {
+		max-width: 100%; 
+		border-bottom: 2px solid #34393F;
+		font-size: .9rem;
+
+		.nombre-producto {  			
+			white-space: nowrap; 
+			overflow: hidden;
+			text-overflow: ellipsis; 
+		}
+		
+		button {
+			width: 30px;
+			height: 30px;
+			font-size: 18px;
+			line-height: 10px;
+			padding: 0;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+
+	.col {
+		padding-right: 0;
+	}
+
+
+	&.cart-movido {
+		transition: right .3s ease-in;
+		right: 0;
+	}
+
+	.tramitar-pedido {
+		position: absolute;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.cart {
+		width: 100%;
+		right: -100%;
+		// right: 0%;
+		transition: right .5s ease-in;
+
+		.divisor, .divisor-pequeno {
+			font-size: 1.2rem;
+
+			button {
+				width: 36px;
+				height: 36px;
+				font-size: 25px;
+
+				svg {
+					width: 20px;
+				}
+			}
+		}
+
+		&.cart-movido {
+			transition: right .5s ease-in;
+		}
+
+		.tramitar-pedido {
+			// min-width: 86.4%;
+			// padding-left: 0 !important
+			left: 0;
+		}
+	}
+} 
+
+@media (max-width: 450px) {
+	.cart {
+		&.px-5 {
+			padding: 16px 20px 0 !important; 
+		}
+
+		.divisor, .divisor-pequeno {
+			font-size: 1rem;
+			
+			button {
+				width: 30px;
+				height: 30px;
+				font-size: 20px;
+
+				svg {
+					width: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 348px) {
+	.cart {
+		&.px-5 {
+			padding: 16px 20px 0 !important; 
+		}
+
+		.divisor, .divisor-pequeno {
+			font-size: .89rem;
+			
+			button {
+				width: 25px;
+				height: 25px;
+				font-size: 17px;
+
+				svg {
+					width: 15px;
+				}
+			}
+		}
+	}	
+}
+
+@media (min-width: 992px) {
+	.cart {
+		width: 35%;
+	}	
+}
+
+@media (min-width: 1200px) {
+	.cart {
+		width: 25%;
+	}	
+}
+
+@media (min-width: 1500px) {
+	.cart {
+		width: 28%;
+	}	
+}
+
+@media (min-width: 1800px) {
+	.cart {
+		width: 32%;
+	}	
+}

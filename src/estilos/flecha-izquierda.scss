@@ -1,0 +1,16 @@
+.flecha-izquierda {
+	position: fixed;
+	top: 50%;
+	transition: right .5s ease-in-out;
+	right: -25px;
+	height: 20px;
+	z-index: 1;
+
+	svg {
+		cursor: pointer;
+	}
+
+	&.mostrarFlecha {
+		right: 0;
+	}
+}
