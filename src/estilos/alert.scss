@@ -35,5 +35,13 @@
 		.alerta {
 			height: 75px;
 		}
+		
+		.quitarAlert {
+			transition: all .5s ease-in;
+			height: 0;
+			padding: 0 !important;
+			margin-bottom: 0 !important;
+		}
 	}
+
 }
